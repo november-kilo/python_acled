@@ -9,7 +9,8 @@ class FolderTest(BaseTest):
     def setUp(self):
         super().setUp()
         try:
-            self.df = pd.read_csv(self.options['data_filename'], usecols=AcledCsvToKml.columns(), dtype={'fatalities': int})
+            self.df = pd.read_csv(self.options['data_filename'], usecols=AcledCsvToKml.columns(),
+                                  dtype={'fatalities': int})
         except IOError:
             print('Failed to open test data.')
 

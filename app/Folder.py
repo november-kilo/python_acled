@@ -10,7 +10,8 @@ class Folder:
 
     def populate_folder(self):
         xml = []
-        folder_rows = self.df[(self.df['event_type'] == self.folder) & (self.df['fatalities'] >= self.options['fatalities_at_least'])].drop_duplicates()
+        folder_rows = self.df[(self.df['event_type'] == self.folder) & (
+                    self.df['fatalities'] >= self.options['fatalities_at_least'])].drop_duplicates()
         for _, row in folder_rows.iterrows():
             xml.append(Placemark(row).xml)
         return '\n'.join(xml)

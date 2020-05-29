@@ -1,4 +1,5 @@
 import re
+
 import numpy as np
 
 from app.AcledCsvToSummary import AcledCsvToSummary
@@ -22,6 +23,5 @@ class BattleFatalitiesSummary(AcledCsvToSummary):
 
     def build_summary(self):
         date_data, battles_data, fatalities_data = self.build_data()
-        summary = [f'Battles: {np.sum(battles_data)}, fatalities: {np.sum(fatalities_data)}\n',
-                   Constants.DATA_SOURCE]
+        summary = [f'Battles: {np.sum(battles_data)}, fatalities: {np.sum(fatalities_data)}\n', Constants.DATA_SOURCE]
         return '\n'.join(summary)
