@@ -1,3 +1,4 @@
+from app.Constants import Constants
 from app.Placemark import Placemark
 
 
@@ -15,5 +16,9 @@ class Folder:
         return '\n'.join(xml)
 
     def build_folder(self):
-        xml = ['<Folder>', f'<name><![CDATA[{self.folder}]]></name>', self.populate_folder(), '</Folder>']
+        xml = ['<Folder>',
+               f'<name><![CDATA[{self.folder}]]></name>',
+               f'<description><![CDATA[{Constants.DATA_SOURCE}]]></description>',
+               self.populate_folder(),
+               '</Folder>']
         return '\n'.join(xml)

@@ -2,7 +2,9 @@
 <name><![CDATA[a]]></name>
 <description><![CDATA[b
 Fatalities: c
-Source: d]]></description>
+Source: d
+
+<p>Data source: Armed Conflict Location & Event Data Project (ACLED); https://www.acleddata.com</p>]]></description>
 <Point>
 <coordinates>e,f,0</coordinates>
 </Point>

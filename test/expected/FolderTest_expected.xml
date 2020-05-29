@@ -1,10 +1,13 @@
 <Folder>
 <name><![CDATA[Protests]]></name>
+<description><![CDATA[Data source: Armed Conflict Location & Event Data Project (ACLED); https://www.acleddata.com]]></description>
 <Placemark>
 <name><![CDATA[sub protest 1]]></name>
 <description><![CDATA[the notes
 Fatalities: 3
-Source: the source]]></description>
+Source: the source
+
+<p>Data source: Armed Conflict Location & Event Data Project (ACLED); https://www.acleddata.com</p>]]></description>
 <Point>
 <coordinates>2,1,0</coordinates>
 </Point>
@@ -13,7 +16,9 @@ Source: the source]]></description>
 <name><![CDATA[sub protest 2]]></name>
 <description><![CDATA[more notes
 Fatalities: 6
-Source: another source]]></description>
+Source: another source
+
+<p>Data source: Armed Conflict Location & Event Data Project (ACLED); https://www.acleddata.com</p>]]></description>
 <Point>
 <coordinates>5,4,0</coordinates>
 </Point>

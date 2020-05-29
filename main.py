@@ -1,18 +1,16 @@
-import os.path
 import argparse
+import os.path
 
 from app.AcledCsvToKml import AcledCsvToKml
-from plots.BattleFatalitiesPlot import BattleFatalitiesPlot
-from plots.EventTypeCountPlot import EventTypeCountPlot
+from summaries.BattleFatalitiesSummary import BattleFatalitiesSummary
+from summaries.EventTypeCountSummary import EventTypeCountSummary
 
 if __name__ == '__main__':
     arg_parser = argparse.ArgumentParser()
     arg_parser.add_argument('-d', '--data', default='./data/data.kml')
     arg_parser.add_argument('-f', '--fatalities', default='0', required=False)
     arg_parser.add_argument('-k', '--kml', action='store_true', required=False)
-    arg_parser.add_argument('-p', '--plots', nargs='+', required=False)
-    arg_parser.add_argument('-s', '--summary', action='store_true', required=False)
-    arg_parser.add_argument('-t', '--title', default='', required=False)
+    arg_parser.add_argument('-s', '--summaries', nargs='+', required=False)
     args = arg_parser.parse_args()
     options = {
         'data_filename': args.data,
@@ -25,17 +23,16 @@ if __name__ == '__main__':
                 print(f'{kml}', file=kml_file)
 
         for arg_name, value in arg_parser.parse_args()._get_kwargs():
-            if arg_name == 'plots':
-                plots = []
+            if arg_name == 'summaries':
+                summaries = []
 
                 if 'event_type_count' in value:
-                    plots.append(EventTypeCountPlot(args))
+                    summaries.append(EventTypeCountSummary(args))
 
                 if 'battle_fatalities' in value:
-                    plots.append(BattleFatalitiesPlot(args))
+                    summaries.append(BattleFatalitiesSummary(args))
 
-                for plot in plots:
-                    plot.build_plot(with_summary=args.summary)
-                    plot.show()
+                for summary in summaries:
+                    print(summary.build_summary())
     else:
         print(f'File {args.data} not found.')

@@ -1,0 +1,6 @@
+event_date,event_type,sub_event_type,latitude,longitude,fatalities,notes,source,region
+"10 November 2019",Protests,"sub protest 1",1,2,3,"the notes","the source",region1
+"10 November 2019",Protests,"sub protest 2",4,5,6,"more notes","another source",region2
+"10 November 2019",Battles,"sub battles 1",7,8,9,"some notes",source,region3
+"10 November 2019",Battles,"sub battles 2",10,11,12,"some notes",source,region3
+"11 November 2019",Battles,"sub battles 3",13,14,15,"some notes",source,region3

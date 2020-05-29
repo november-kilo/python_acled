@@ -1,0 +1,3 @@
+Battles: 3, fatalities: 36
+
+Data source: Armed Conflict Location & Event Data Project (ACLED); https://www.acleddata.com

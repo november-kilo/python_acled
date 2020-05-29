@@ -9,4 +9,4 @@ class AcledCsvToKmlTest(BaseTest):
                          'Wrong columns.')
 
     def test_build_kml(self):
-        self.xml_compare('test/expected/AcledCsvToKmlTest_expected.xml', AcledCsvToKml(self.options).build_kml())
+        self.compare_actual_to_expected('test/expected/AcledCsvToKmlTest_expected.xml', AcledCsvToKml(self.options).build_kml())
