@@ -1,6 +1,6 @@
 import pandas as pd
 
-from app.Placemark import Placemark
+from kml.Placemark import Placemark
 from test.base_test import BaseTest
 
 

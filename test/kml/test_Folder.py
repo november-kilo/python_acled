@@ -1,7 +1,7 @@
 import pandas as pd
 
 from app.AcledCsvToKml import AcledCsvToKml
-from app.Folder import Folder
+from kml.Folder import Folder
 from test.base_test import BaseTest
 
 

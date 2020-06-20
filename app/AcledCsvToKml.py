@@ -1,6 +1,6 @@
 import pandas as pd
 
-from app.Folder import Folder
+from kml.Folder import Folder
 
 
 class AcledCsvToKml:

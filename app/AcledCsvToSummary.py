@@ -11,3 +11,6 @@ class AcledCsvToSummary:
 
     def build_summary(self):
         return ''
+
+    def display_plot(self):
+        pass

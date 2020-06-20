@@ -34,5 +34,6 @@ if __name__ == '__main__':
 
                 for summary in summaries:
                     print(summary.build_summary())
+                    summary.display_plot()
     else:
         print(f'File {args.data} not found.')

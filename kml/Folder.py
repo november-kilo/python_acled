@@ -1,5 +1,5 @@
 from app.Constants import Constants
-from app.Placemark import Placemark
+from kml.Placemark import Placemark
 
 
 class Folder:
