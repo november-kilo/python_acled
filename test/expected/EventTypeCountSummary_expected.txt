@@ -1,3 +1,4 @@
+a title
 Event type  Reported count
    Battles               3
   Protests               2

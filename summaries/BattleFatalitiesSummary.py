@@ -35,7 +35,7 @@ class BattleFatalitiesSummary(AcledCsvToSummary):
     def build_summary(self):
         self.reset()
         self.build_data()
-        summary = [f'Battles: {np.sum(self.battles_data)}, fatalities: {np.sum(self.fatalities_data)}\n', Constants.DATA_SOURCE]
+        summary = [f'{self.args.title}\nBattles: {np.sum(self.battles_data)}, fatalities: {np.sum(self.fatalities_data)}\n', Constants.DATA_SOURCE]
         return '\n'.join(summary)
 
     def display_plot(self):
@@ -47,11 +47,15 @@ class BattleFatalitiesSummary(AcledCsvToSummary):
             'fatalities_mean': [GeometricMean.get(self.fatalities_data)] * len(self.fatalities_data)
         })
 
+        alpha = 0.7
         ax = plt.gca()
-        df.plot(kind='line', x='Date', color='blue', y='battles', label='Battles', ax=ax)
-        df.plot(kind='line', x='Date', color='blue', y='battles_mean', linewidth=1, label='Battles mean', linestyle='--', ax=ax)
-        df.plot(kind='line', x='Date', color='red', y='fatalities', label='Fatalities', ax=ax)
-        df.plot(kind='line', x='Date', color='red', y='fatalities_mean', linewidth=1, label='Fatalities mean', linestyle='--', ax=ax)
-        plt.text(0, 12, Constants.DATA_SOURCE_NAME)
-        plt.text(0, 0, Constants.DATA_SOURCE_URL)
+        ax.set_facecolor('#F7F7F7')
+        df.plot(kind='line', x='Date', color='blue', y='battles', label='Battles', ax=ax, alpha=alpha)
+        df.plot(kind='line', x='Date', color='blue', y='battles_mean', linewidth=1, label='Battles mean', linestyle='--', ax=ax, alpha=alpha)
+        df.plot(kind='line', x='Date', color='red', y='fatalities', label='Fatalities', ax=ax, alpha=alpha)
+        df.plot(kind='line', x='Date', color='red', y='fatalities_mean', linewidth=1, label='Fatalities mean', linestyle='--', ax=ax, alpha=alpha)
+        plt.grid(which='both')
+        plt.text(0, 14, Constants.DATA_SOURCE_NAME)
+        plt.text(0, 2, Constants.DATA_SOURCE_URL)
+        plt.title(self.args.title)
         plt.show()

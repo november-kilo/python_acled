@@ -11,6 +11,7 @@ if __name__ == '__main__':
     arg_parser.add_argument('-f', '--fatalities', default='0', required=False)
     arg_parser.add_argument('-k', '--kml', action='store_true', required=False)
     arg_parser.add_argument('-s', '--summaries', nargs='+', required=False)
+    arg_parser.add_argument('-t', '--title', required=True)
     args = arg_parser.parse_args()
     options = {
         'data_filename': args.data,
