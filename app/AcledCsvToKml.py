@@ -11,7 +11,8 @@ class AcledCsvToKml:
 
     @staticmethod
     def columns():
-        return ['event_type', 'sub_event_type', 'latitude', 'longitude', 'fatalities', 'notes', 'source', 'region']
+        return ['event_type', 'sub_event_type', 'latitude', 'longitude', 'fatalities', 'notes', 'source',
+                'source_scale', 'region']
 
     def build_kml(self):
         xml = ['<?xml version="1.0" encoding="UTF-8"?>', '<kml xmlns="http://www.opengis.net/kml/2.2">', '<Document>']

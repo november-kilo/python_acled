@@ -9,6 +9,7 @@
 <description><![CDATA[the notes
 Fatalities: 3
 Source: the source
+ (National)
 
 <p>Data source: Armed Conflict Location & Event Data Project (ACLED); https://www.acleddata.com</p>]]></description>
 <Point>
@@ -20,6 +21,7 @@ Source: the source
 <description><![CDATA[more notes
 Fatalities: 6
 Source: another source
+ (National)
 
 <p>Data source: Armed Conflict Location & Event Data Project (ACLED); https://www.acleddata.com</p>]]></description>
 <Point>
@@ -35,6 +37,7 @@ Source: another source
 <description><![CDATA[some notes
 Fatalities: 9
 Source: source
+ (New Media)
 
 <p>Data source: Armed Conflict Location & Event Data Project (ACLED); https://www.acleddata.com</p>]]></description>
 <Point>
@@ -46,6 +49,7 @@ Source: source
 <description><![CDATA[some notes
 Fatalities: 12
 Source: source
+ (New Media)
 
 <p>Data source: Armed Conflict Location & Event Data Project (ACLED); https://www.acleddata.com</p>]]></description>
 <Point>
@@ -57,6 +61,7 @@ Source: source
 <description><![CDATA[some notes
 Fatalities: 15
 Source: source
+ (International)
 
 <p>Data source: Armed Conflict Location & Event Data Project (ACLED); https://www.acleddata.com</p>]]></description>
 <Point>

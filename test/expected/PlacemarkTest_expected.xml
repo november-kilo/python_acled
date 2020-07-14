@@ -3,9 +3,10 @@
 <description><![CDATA[b
 Fatalities: c
 Source: d
+ (e)
 
 <p>Data source: Armed Conflict Location & Event Data Project (ACLED); https://www.acleddata.com</p>]]></description>
 <Point>
-<coordinates>e,f,0</coordinates>
+<coordinates>f,g,0</coordinates>
 </Point>
 </Placemark>

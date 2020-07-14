@@ -6,7 +6,7 @@ class AcledCsvToKmlTest(BaseTest):
     def test_constants(self):
         self.assertEqual(AcledCsvToKml.columns(),
                          ['event_type', 'sub_event_type', 'latitude', 'longitude', 'fatalities', 'notes', 'source',
-                          'region'],
+                          'source_scale', 'region'],
                          'Wrong columns.')
 
     def test_build_kml(self):
