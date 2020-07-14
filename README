@@ -2,7 +2,9 @@ Parse CSV data from https://acleddata.com/data-export-tool/ to KML.
 Also prints summaries.
 
 Example usage:
-python main.py -d data/2020-04-01-2020-04-30.csv -f 0 -k -s event_type_count battle_fatalities -t "April 2020"
+python csv_to_kml_and_summaries.py -d data/2020-04-01-2020-04-30.csv -f 0 -k -s event_type_count battle_fatalities -t "April 2020"
+
+python csv_to_db.py --source data/2020-04-01-2020-04-30.csv
 
 Run tests:
 python -m unittest
